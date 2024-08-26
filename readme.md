@@ -1,1 +1,1 @@
-https://github.com/VRomanova1998/Maket_1.4.git
+https://vromanova1998.github.io/Maket_1.4/
