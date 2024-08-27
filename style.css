@@ -39,28 +39,35 @@ margin:0;
 }
 
 .aside {
-    box-sizing: border-box;
+  box-sizing: border-box;
     width:320px;
-    height: 1024px;
+    height:100vh;
     padding:15px;
-    box-shadow: 20px 0px 50px -20px rgba(0,0,0, 0.4)
+    box-shadow: 20px -20px 50px -20px rgba(0,0,0, 0.4);
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
     }
 
 .header {
     display: flex;
-    padding:0;
-  margin-bottom:45px;
     column-gap: 10px;
     }
 
-.button {
+.header__button, 
+.container__button {
 background-color: rgba(255, 255, 255, 0);
 border:none;
 }
 
-.button_right {
+.header__button_right {
 margin-left:auto;
 margin-right:10px;
+}
+
+.header__button:hover, 
+.container__button:hover {
+    transform: scale(1.1);
 }
 
 .menu {
@@ -69,14 +76,13 @@ margin-right:10px;
     flex-direction: column;
     row-gap: 35px;
     padding-left:10px;
+    margin-bottom:30px;
 }
 
 .menu a {
-    display:inline-block;
+display:inline-block;
 text-decoration: none;
 color: #1B1C21;
-position:relative;
-text-align:start;
 }
 
 .menu a:hover {
@@ -95,35 +101,31 @@ text-align:start;
 border-top-right-radius: 5px;
  border-bottom-right-radius: 5px;
 top: -5px;
-left:-24px;
+left:-23px;
 }
 
 .container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin-bottom:30px;
-    position: absolute;
-    bottom:0;
+    margin-top:auto;
     row-gap: 10px;
 }
 
-.mobile-number {
-    font-family: "TT Lakes Bold";
+.container__mobile-number {
+   font-family: "TT Lakes Bold";
    color: #1B1C21;
    font-size:24px;
    margin-bottom:20px;
    text-decoration: none;
 }
 
-.email {
+.container__email {
     text-decoration:none;
     color: #1B1C21;
 }
 
-.language:focus {
+.container__button__language:focus {
     color:#7E7E82;
 }
 
-.button:hover {
-    transform: scale(1.1);
-}
